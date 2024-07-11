@@ -11,10 +11,10 @@ Semantic segmentation involves labeling each pixel of an image with a class, ena
 - Class Imbalance Handling: Implements focal loss to address class imbalance in the dataset.
 
 ## Tech Stack 
-TensorFlow: For model building and training.
-Keras: For high-level neural network API.
-NumPy: For data manipulation.
-Matplotlib: For visualization.
+- TensorFlow: For model building and training.
+- Keras: For high-level neural network API.
+- NumPy: For data manipulation.
+- Matplotlib: For visualization.
 
 ## Model Archtecture 
 The U-Net model used in PatchPal consists of an encoder-decoder structure with the following layers:
@@ -22,3 +22,7 @@ The U-Net model used in PatchPal consists of an encoder-decoder structure with t
 Encoder: Series of Conv2D, Dropout, and MaxPooling2D layers to extract features.
 Bottleneck: Deepest part of the network, capturing the most abstract features.
 Decoder: Series of Conv2DTranspose, concatenate, and Conv2D layers to reconstruct the image and produce segmentation masks
+
+## Result 
+<img width="650" alt="image" src="https://github.com/dikshapadi/PatchPal/assets/95542633/8f518dc7-c9df-4a7e-beb9-5f29ec27c3a6">
+
